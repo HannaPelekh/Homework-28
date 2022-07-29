@@ -1,0 +1,18 @@
+.contact_list{    
+    width: 1200px; 
+    height: 74vh;    
+    border: 2px solid #24292f; 
+    margin: 25px auto 50px; 
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;  
+    row-gap: 30px;    
+    background-color: #f1f4f6; 
+    overflow-y: auto;  
+    align-content: center;
+    justify-content: flex-start;
+    border: 2px solid #24292f;  
+    padding: 30px;   
+}
+
+    

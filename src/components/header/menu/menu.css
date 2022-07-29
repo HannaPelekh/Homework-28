@@ -1,0 +1,27 @@
+.header{
+    background-color: #24292f;
+    height: 8vh;      
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.menu{  
+    width: 1200px;
+    display: flex;
+    flex-direction: row;      
+    column-gap: 50px;
+    padding: 20px 0;      
+}
+.link{
+    color: #dde3e9; 
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;    
+    border-bottom: #24292f 2px solid;
+    transition: all ease-in-out 0.3s;
+}
+.link:hover{   
+    border-bottom: #dde3e9 2px solid;
+    transition: all ease-in-out 0.3s;
+}

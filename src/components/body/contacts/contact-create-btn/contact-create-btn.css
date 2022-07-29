@@ -1,0 +1,20 @@
+.create_contact_btn{
+    width: 60px;
+    height: 60px;
+    background-color: #24292f;
+    color: #dde3e9; 
+    border-radius: 50%;
+    font-size: 60px;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;    
+    border: 2px solid #24292f;
+    transition: all ease-in-out 0.4s;    
+}
+.create_contact_btn:hover{
+    background-color: #ffffff;
+    color:  #24292f;
+    border: 2px solid #24292f;
+    transition: all ease-in-out 0.4s;
+}
+    
