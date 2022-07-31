@@ -14,18 +14,17 @@ function App() {
     <div className="App">
       <Router>
         <Header></Header>
-        <Routes>
-          <Route index element={<Home />}></Route>
+        <Routes>          
           <Route path="/" element={<Home />}></Route>
           <Route path="/todos" element={<CreateTodoBTN />}>
+            <Route index element={<TodoList/>}></Route> 
           <Route path="create" element={<CreateTodo />}></Route>
-            <Route path=":userId" element={<EditTodo />}></Route>
-            <Route path="list" element={<TodoList/>}></Route>            
+            <Route path=":userId" element={<EditTodo />}></Route>                       
           </Route>
           <Route path="/contacts" element={<CreateContactBTN />}>
+            <Route index element={<ContactList />}></Route>  
           <Route path="create" element={<CreateContact />}></Route>
-            <Route path=":userId" element={<EditContact />}></Route> 
-            <Route path="list" element={<ContactList />}></Route>            
+            <Route path=":userId" element={<EditContact />}></Route>                       
           </Route>
         </Routes>
       </Router>
