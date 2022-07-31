@@ -8,7 +8,7 @@ export default function EditContact() {
   const initialState: ContactI = { name: "", lastName: "", id: "", phone: ""  };
   const [contact, setContact] = useState(initialState);
   useEffect(() => {
-    api.get("contacts/" + params.userId).then((r) => setContact(r.data));
+    api.get("contacts/" + params.contactId).then((r) => setContact(r.data));
   }, []);
   function onEditeContact(): void {
     api.put("contacts/" + contact.id, contact).then((r) => navigate("/contacts/list"));
