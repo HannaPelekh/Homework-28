@@ -9,11 +9,11 @@ export default function Menu() {
     },
     {
       title: "Todos",
-      link: "/todos/list",
+      link: "/todos",
     },
     {
       title: "Contacts",
-      link: "/contacts/list",
+      link: "/contacts",
     },
   ];
   return (
