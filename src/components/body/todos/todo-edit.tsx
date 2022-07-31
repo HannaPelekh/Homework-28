@@ -8,7 +8,7 @@ export default function EditTodo() {
   const initialState: TodoI = { title: "", body: "", isComplete: false };
   const [todo, setTodo] = useState(initialState);
   useEffect(() => {
-    api.get("todos/" + params.userId).then((r) => setTodo(r.data));
+    api.get("todos/" + params.todoId).then((r) => setTodo(r.data));
   }, []);
   function onEditeTodo(): void {
     api.put("todos/" + todo.id, todo).then((r) => navigate("/todos/list"));
