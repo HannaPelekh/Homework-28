@@ -19,12 +19,12 @@ function App() {
           <Route path="/todos" element={<CreateTodoBTN />}>
             <Route index element={<TodoList/>}></Route> 
           <Route path="create" element={<CreateTodo />}></Route>
-            <Route path=":userId" element={<EditTodo />}></Route>                       
+            <Route path=":todoId" element={<EditTodo />}></Route>                       
           </Route>
           <Route path="/contacts" element={<CreateContactBTN />}>
             <Route index element={<ContactList />}></Route>  
           <Route path="create" element={<CreateContact />}></Route>
-            <Route path=":userId" element={<EditContact />}></Route>                       
+            <Route path=":contactId" element={<EditContact />}></Route>                       
           </Route>
         </Routes>
       </Router>
